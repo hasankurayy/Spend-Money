@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.product{
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 24%;
+  .actions{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    button{
+      height: 40px;
+      padding: 0 15px;
+      flex: 1;
+      cursor: pointer;
+    }
+    button[disabled]{
+      cursor: not-allowed;
+      opacity: .4;
+    }
+    .buy-btn{
+      background-color: #61dafb;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+    .sell-btn{
+      background-color: #ccc;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+    .amount{
+      width: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  img{
+    width: 100% ;
+    height: 70%;
+    background: transparent ;
+  }
+  h6{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .price{
+    font-size: 20px;
+    color: #179b17;
+  }
+}
+
+.header{
+  background: linear-gradient(to bottom, #20b820, greenyellow);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  span{
+    margin: 0 10px;
+    font-weight: bold;
+    color: black ;
+  }
+}
+
+.reset-btn{
+  background-color: #61dafb;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
