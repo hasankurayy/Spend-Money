@@ -1,6 +1,6 @@
 # Run The Project
 
-To run the project click the [link](https://spendmoneyhkuray.surge.sh)
+To run the project click the [link](https://spendmoneyhkurayy.surge.sh)
 
 ## Description
 
