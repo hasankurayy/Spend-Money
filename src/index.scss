@@ -25,7 +25,8 @@ code {
   background-color: #fff;
   border: 1px solid #ddd;
   margin-bottom: 20px;
-  width: 24%;
+  width: 33%;
+  height: 450px;
   .actions{
     display: flex;
     align-items: center;
@@ -65,9 +66,11 @@ code {
     }
   }
   img{
-    width: 100% ;
+    width: 200px ;
     height: 70%;
     background: transparent ;
+    text-align: center;
+    margin-left: 50px;
   }
   h6{
     font-size: 20px;
@@ -77,6 +80,10 @@ code {
     font-size: 20px;
     color: #179b17;
   }
+}
+.header-main{
+  position: sticky;
+  top: 0;
 }
 
 .header{
@@ -104,6 +111,34 @@ code {
   font-weight: 500;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.basket-container{
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  ul{
+    list-style: none;
+    .basket-item{
+      padding-bottom: 10px;
+      span{
+        color: #999;
+      }
+    }
+  }
+  .total{
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #179b17;
+  }
 }
 
 .container{

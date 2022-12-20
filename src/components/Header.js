@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header({ money, total }) {
     return (
-        <div>
+        <div className='header-main'>
             {money - total > 0 && total !== 0 && (
                 <div className='header'>
                     Harcayacak <span>{money - total} TL</span> paranız kaldı.

@@ -3,10 +3,11 @@ import { useState, useEffect } from "react"
 import Header from "./components/Header"
 import products from "./products.json"
 import Product from "./components/Product"
+import Basket from './components/Basket';
 
 function App() {
 
-  const [money, setMoney] = useState(100)
+  const [money, setMoney] = useState(150000)
   const [basket, setBasket] = useState([])
   const [total, setTotal] = useState(0)
 
@@ -33,9 +34,10 @@ function App() {
         ))}
       </div>
 
-      {total !== 0 && (
-        <button className='reset-btn' onClick={resetBasket}>Sepeti Sıfırla</button>
+      {total > 0 && (
+        <Basket basket={basket} products={products} total={total} resetBasket={resetBasket} />
       )}
+
     </>
   );
 }
